@@ -64,19 +64,45 @@
   font-weight: 700;
 }
 
+
 .participants-list {
-  list-style: disc inside;
-  margin-left: 6px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   color: #333;
   font-size: 14px;
   max-height: 140px;
   overflow: auto;
   padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .participant-item {
-  padding: 4px 0;
-  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198,40,40,0.08);
+  color: #9a1b1b;
 }
 
 .participants-empty {
